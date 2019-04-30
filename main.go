@@ -7,8 +7,6 @@ import (
 	"time"
 )
 
-//create a new type of deck like float64 , string,
-// which is a slice of strings now deck gets all the features of slice of string
 type deck []string
 
 func newDeck() deck {
