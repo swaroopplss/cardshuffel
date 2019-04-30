@@ -36,10 +36,6 @@ func deal(d deck, handSize int) (deck, deck) {
 	return d[:handSize], d[handSize:]
 }
 
-func (d deck) toString() string {
-	return strings.Join([]string(d), ",")
-
-}
 func (d deck) shuffle() {
 	source := rand.NewSource(time.Now().UnixNano())
 	r := rand.New(source)
